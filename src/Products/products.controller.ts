@@ -9,8 +9,7 @@ export class ProductsController {
     addProduct(
         @Body('title')prodTitle: string, 
         @Body('description')prodDesc: string,
-         @Body('price')prodPrice: number): 
-    any {
+        @Body('price')prodPrice: number) {
         const generatedID=this.productsService.insertProduct(
             prodTitle, 
             prodDesc,

@@ -10,6 +10,7 @@ export class ProductsService {
         const prodId = Math.random().toString();
         const newProduct= new Product(prodId, title, desc, price)
         this.products.push(newProduct);
+        console.log(price);
         return prodId;
     }
 
